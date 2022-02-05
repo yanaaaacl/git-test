@@ -1,16 +1,8 @@
-phrase = "Dont't panic!"
+phrase = "Don't panic!"
 plist = list(phrase)
 print(phrase)
 print(plist)
-for i in range(4):
-    plist.pop()
-plist.pop(0)
-plist.remove("'")
-plist.remove(" ")
-plist.remove("t")
-plist.pop()
-plist.insert(3, "a")
-plist.insert(2, " ")
-new_phrase = "".join(plist)
+new_phrase = "".join(plist[1:3])
+new_phrase = new_phrase + "".join([plist[5], plist[4], plist[7], plist[6]])
 print(plist)
 print(new_phrase)
