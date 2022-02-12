@@ -2,9 +2,8 @@ def search4vowels(word):
     # Выводит гласные, найденные во введенном слове.
     vowels = {"a", "e", "i", "o", "u"}  
     found = vowels.intersection(set(word))
-    for vowel in found:
-        print(vowel)
+    return bool(found)
 a = "hello"
-search4vowels(a)
+print(search4vowels(a))
 
 
